@@ -1,0 +1,172 @@
+<!DOCTYPE html> <!-- SUPIT projekt |  HTML, CSS, JS, JQuery-->
+<html>
+    <head>
+        <link href="../css/mainpage.css" rel="stylesheet" />
+        <link href="../css/curriculum.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+
+
+        <script type="text/javascript" src="../scripts/js/curriculum.js"></script>
+
+        <!-- JQUERY UI -->
+        <link rel="stylesheet" href="../jquery-ui-1.13.2.custom/jquery-ui.min.css">
+        <script src="../jquery-ui-1.13.2.custom/external/jquery/jquery.js"></script>
+        <script src="../jquery-ui-1.13.2.custom/jquery-ui.min.js"></script>
+
+
+
+
+
+
+
+        <!-- CONTACT -->
+        <script type="text/javascript" src="../scripts/js/contact.js"></script>
+        <link href="../css/contact.css" rel="stylesheet" />
+
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- VERY VERY IMPORTANT-->
+        <link rel="icon" type="image/x-icon" href="../media/img/logo-algebra-rounded.svg"> <!-- favicon, optional but fancy-->
+
+    </head>
+
+
+    <body>
+
+
+
+        <!-- <div id="nav">
+            <div class="navbutton"><a href="url">Home</a></div>
+            <div class="navbutton"><a href="url">About us</a></div>
+            <div class="navbutton"><a href="url">News</a></div>
+            <div class="navbutton"><a href="url">Curriculum</a></div>
+            <div class="navbutton"><a href="url">Contact</a></div>
+        </div> -->
+
+
+        <!-- <div id="content">
+            <div class="heading"><h1>Test 1</h1></div>
+            <div class="text">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
+                ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem
+                ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem
+                ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem
+                ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem
+                ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
+                ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem
+                ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem
+                ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem
+                ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem
+                ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
+                ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem
+                ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem
+                 ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem
+                  ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem
+                   ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+
+            </div> -->
+            <div class="grid-container">
+                <div class="nav" id="nav">
+                    <div class="threedash"><a class="ui-icon ui-icon-caret-1-s" href="javascript:show3dash();" id="3dashbutton"></a></div>
+                    <div class="navicon"><a href="../html/index.html"><img id="navicon" src="../media/img/Algebra_VUA.svg"></a></div>
+                    <div class="navbutton"><a href="../html/index.html">Home</a></div>
+                    <div class="navbutton"><a href="../html/index.html#aboutus">About us</a></div>
+                    <div class="navbutton"><a href="../html/news.html">News</a></div>
+                    <div class="navbutton" id="curriculum"><a href="../html/curriculum2.html">Curriculum</a></div>
+                    <div class="navbutton"><a href="javascript:showcontact()">Contact</a></div>
+                    <div class="navbutton"><a href="../html/login.html" id="loginnav">Login</a></div>
+                </div>
+                <div class="side_left"></div>
+                <div class="side_right"></div>
+                <div class="text">
+
+                    <div class="title">
+                        <h1>Algebra</h1>
+                    </div>
+
+                    <a href="curriculum2.html">Single course view</a>
+
+                    <div class="list">
+                        <table id="table">
+                            <tbody>
+
+                                <tr id="table-id">
+                                    <th class="tdclass-title">ID</th>
+                                    <th class="tdclass-title">Course</th>
+                                    <th class="tdclass-title">ECTS</th>
+                                    <th class="tdclass-title">Hours</th>
+                                    <th class="tdclass-title">Lectures</th>
+                                    <th class="tdclass-title">Exercises</th>
+                                    <th class="tdclass-title">Type</th>
+                                    <th class="tdclass-title">Semester</th>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+
+                    </div>
+
+
+
+
+
+                    <div>
+                        <div class="contact" style="display: none;">
+                            <h1 id="title3">Contact us</h1>
+                            <p style="color: green;" id="successp3"></p>
+                            <p style="color: red;" id="failurep3"></p>
+                            <form id="contactform" action="https://www.fulek.com/mvc/supit/project-contact-form"> <!-- probably intended this way, simpler-->
+                                <label for="Fullname">Full Name:</label><br>
+                                <input type="text" id="Fullname" name="Fullname" value="test" placeholder="Full Name"><br>
+                                <label for="Email">Email:</label><br>
+                                <input type="email" id="Email" name="Email" value="test@test" placeholder="email@domain.com"><br><br>
+                                <label for="Importance">Importance:</label><br>
+                                <input type="text" id="Importance" name="Importance" value="Visoko" placeholder="Low"><br><br>
+
+                                <label for="Message">Message:</label><br>
+                                <input type="text" id="Message" name="Message" value="tes ttesttest" placeholder="Message"><br><br>
+                                <p style="color: green;" id="redirectp3"></p>
+                                <label for="RecieveNewsletter" style="margin-left: 20px;margin-bottom: 2em;">Recieve Newsletter:<input type="checkbox" id="ReceiveNewsletter" name="ReceiveNewsletter" value="true"></label><br>
+                                <!-- <input type="text" id="RecieveNewsletter" name="RecieveNewsletter" value="true" placeholder="Yes"><br><br> -->
+                                
+                                <input type="submit" id="contactbutton" style="width: 100px;height: 50px;margin-top: 1em;" value="Submit"></input>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="logout" style="display: none;">
+                            <h1 id="title4">Are you sure?</h1>
+                            <p style="color: green;" id="successp3"></p>
+                            <p style="color: red;" id="failurep3"></p>
+                            <button type="button" onclick="logout(true)" id="logoutbutton" style="width: 100px;height: 50px;">Yes</button>
+                            <button type="button" onclick="logout(false)" id="logoutbutton" style="width: 100px;height: 50px;">No</button>
+                        </div>
+
+                    </div>
+
+
+                    <div>
+                        <div class="notloggedin" style="display: none;">
+                            <h1 id="title5">Not logged in</h1>
+                            <p style="color: green;" id="successp4"></p>
+                            <p style="color: red;" id="failurep4"></p>
+                            <p style="text-align: center;">You need to be logged in to view this page</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="footer">
+                    <p>Standards in internet technology application</p>
+                    <p>Project 2024</p>
+                    <p>&copy;Derin Taranci</p>
+                </div>
+            </div>
+
+        <!-- </div> -->
+
+
+
+    </body>
+</html>

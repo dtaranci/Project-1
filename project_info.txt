@@ -1,0 +1,14 @@
+Made for the Standards in internet technology application course 2023/2024
+
+by Derin Taranci
+
+Project consists of:
+
+html
+css
+javascript
+jQuery
+Fancybox
+
+
+Source for information/text/images about Algebra: https://www.algebra.hr/visoko-uciliste/en/

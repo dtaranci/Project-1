@@ -1,0 +1,424 @@
+<!DOCTYPE html> <!-- SUPIT projekt |  HTML, CSS, JS, JQuery-->
+<html>
+    <head>
+        <link href="../css/mainpage.css" rel="stylesheet" />
+        <link href="../css/index.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+        />
+
+
+        <!-- JQUERY UI -->
+        <link rel="stylesheet" href="../jquery-ui-1.13.2.custom/jquery-ui.min.css">
+        <script src="../jquery-ui-1.13.2.custom/external/jquery/jquery.js"></script>
+        <script src="../jquery-ui-1.13.2.custom/jquery-ui.min.js"></script>
+        
+        
+        <script type="text/javascript" src="../scripts/js/index.js"></script>
+
+        <!-- CONTACT -->
+        <script type="text/javascript" src="../scripts/js/contact.js"></script>
+        <link href="../css/contact.css" rel="stylesheet" />
+
+        
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- VERY VERY IMPORTANT-->
+        <style>
+
+        </style>
+        <link rel="icon" type="image/x-icon" href="../media/img/logo-algebra-rounded.svg"> <!-- favicon, optional but fancy-->
+    </head>
+
+
+    <body>
+
+
+
+        <!-- <div id="nav">
+            <div class="navbutton"><a href="url">Home</a></div>
+            <div class="navbutton"><a href="url">About us</a></div>
+            <div class="navbutton"><a href="url">News</a></div>
+            <div class="navbutton"><a href="url">Curriculum</a></div>
+            <div class="navbutton"><a href="url">Contact</a></div>
+        </div> -->
+
+
+        <!-- <div id="content">
+            <div class="heading"><h1>Test 1</h1></div>
+            <div class="text">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem 
+                ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem 
+                ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem 
+                ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem 
+                ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem 
+                ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem 
+                ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem 
+                ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem 
+                ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem 
+                ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem 
+                ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem 
+                ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem 
+                ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem
+                 ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem
+                  ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem
+                   ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+
+            </div> -->
+            <div class="grid-container">
+                <div class="nav" id="nav">
+                    <div class="threedash"><a class="ui-icon ui-icon-caret-1-s" href="javascript:show3dash();" id="3dashbutton"></a></div>
+                    <div class="navicon"><a href="../html/index.html"><img id="navicon" src="../media/img/Algebra_VUA.svg"></a></div>
+                    <div class="navbutton"><a href="../html/index.html">Home</a></div>
+                    <div class="navbutton"><a href="../html/index.html#aboutus">About us</a></div>
+                    <div class="navbutton"><a href="../html/news.html">News</a></div>
+                    <div class="navbutton" id="curriculum"><a href="../html/curriculum2.html">Curriculum</a></div>
+                    <div class="navbutton"><a href="javascript:showcontact()">Contact</a></div>
+                    <div class="navbutton"><a href="../html/login.html" id="loginnav">Login</a></div>
+                </div>
+                <div class="side_left"></div>
+                <div class="side_right"></div>
+
+
+
+
+
+
+                <!-- VIDEO RELATED BELOW -->
+                
+                <div id="video">
+                    <video autoplay muted loop id="myVideo" class="videonoblur">
+                        <source src="../media/video/Algebra_compressed_alt_constantframerate.mp4" type="video/mp4"> <!-- original 127MiB , handbrake compressed & web optimized 14.5MiB , alt different handbrake settings 29.5MiB (best looking for it's size)-->
+                    </video>
+                </div>
+
+                <div class="text">
+                    
+
+
+
+                    <div class="title" id="videotext" onmouseover="setvideoblur(true),showtable(true)" onmouseleave="setvideoblur(false),showtable(false)">
+                        <h1>Algebra</h1>
+                        <h2>Collage University</h2>
+                        <div id="algebracitiestablediv">
+                            <table id="CitiesTable">
+                                <tbody>
+                                        <tr>
+                                            <td>Zagreb</td>
+                                            <td>Split</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Osijek</td>
+                                            <td>Zadar</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bjelovar</td>
+                                            <td>Sisak</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Rijeka</td>
+                                            <td>Jastrebarsko</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Samobor</td>
+                                            <td>Vukovar</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vinkovci</td>
+                                            <td>Pula</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Varaždin</td>
+                                            <td>Šibenik</td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h1 id="mobilearrow">▾</h1>
+                    </div>
+
+
+
+
+
+
+
+
+                    <!-- CONTENT BELOW -->
+
+
+                    <div id="maincontentbox" style="margin-top: 12vh;z-index: 1;">
+                        <!-- <div class="gallery">
+                            <div >
+                                <img id="mainpicture" src="../media/img/algebra_zgrada.jpg">
+                            </div>
+                            <div id=
+                            "picturecontainer">
+                                <div id="picture 1"><img id="gallery2" src="https://www.algebra.hr/wp-content/uploads/2021/05/preddiplomski_VUA.jpg" onclick='changegallerypicture("gallery2")'></div>
+                                <div id="picture 2"><img id="gallery3" src="https://www.algebra.hr/visoko-uciliste/wp-content/uploads/sites/2/2021/05/shutterstock_714655759.png" onclick='changegallerypicture("gallery3")'></div>
+                                <div id="picture 3"><img id="gallery4" src="https://www.algebra.hr/sveuciliste/wp-content/uploads/2024/01/slider_1400x600_CGI-Romero.jpg" onclick='changegallerypicture("gallery4")'></div>
+                                <div id="picture 4"><img id="gallery5" src="https://www.algebra.hr/wp-content/uploads/2021/05/preddiplomski_VUA.jpg" onclick='changegallerypicture("gallery5")'></div>
+                            </div>
+                            <button onclick="jsPicture()">press</button>
+                        </div> -->
+                        <div class="gallery">
+                            <h1>Gallery</h1>
+                            <div>
+                                <a href="../media/img/algebra_zgrada.jpg" data-fancybox="gallery" data-caption="ALGEBRA  ZAGREB - Gradišćanska 24">
+                                    <img id="mainpicture" src="../media/img/algebra_zgrada.jpg" />
+                                </a>
+                            </div>
+                            <div id="picturecontainer">
+                                <div id="picture1">
+                                    <a href="../media/img/sistemsko.jpg" data-fancybox="gallery" data-caption="Professional Bachelor Study Programme in Applied Computer Engineering">
+                                        <img src="../media/img/sistemsko.jpg" />
+                                    </a>
+                                </div>
+                                <div id="picture2">
+                                    <a href="../media/img/multimedijsko.jpg" data-fancybox="gallery" data-caption="Professional Bachelor Study Programme in Multimedia Production">
+                                        <img src="../media/img/multimedijsko.jpg" />
+                                    </a>
+                                </div>
+                                <div id="picture3">
+                                    <a href="../media/img/3d-oblikovanje.jpg" data-fancybox="gallery" data-caption="Professional Bachelor Study Programme in 3D Design">
+                                        <img src="../media/img/3d-oblikovanje.jpg" />
+                                    </a>
+                                </div>
+                                <div id="picture4">
+                                    <a href="../media/img/dizajn.jpg" data-fancybox="gallery" data-caption="Professional Bachelor Study Programme in Market Communication Design">
+                                        <img src="../media/img/dizajn.jpg" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="text">
+                            <div id="altbackgroundandtext">
+
+                                <h1>Study at Algebra University Collage</h1>
+                                <p>If you are thinking about enrolling in an institution of higher learning, you’re already on the right track. Choose one of our six study programmes in a digital field and embark on a journey towards your digital future.</p>
+                                <p>Algebra University offers to the next generation of its students a possibility to study in English on validated bachelor study programmes in the fields of computing, graphics technology, digital marketing, design and management and a unique chance to receive a Dual Degree from AUC and Goldsmiths, University of London.</p>
+
+                            </div>
+
+                            <div class="flexboxdivclass" id="textcolumns">
+                                <div class="flexboxdivbox">
+                                    <h1>Master</h1>
+                                    <p>Do you want to expand on the foundations built during your bachelor studies? Choose one of our eight master study programmes conducted in English and achieve your full potential.
+                                    </p>
+                                </div>
+                                <div class="flexboxdivbox">
+                                    <h1>English</h1>
+                                    <p>Algebra University offers to the next generation of its students a possibility to study in English on validated master study programmes in the fields of computing, design and management and a unique chance to receive a Dual Degree from AUC and Goldsmiths, University of London.
+                                    </p>
+                                </div>
+                                <div class="flexboxdivbox">
+                                    <h1>Quality</h1>
+                                    <p>Based on the results of the overall institution quality evaluation, conducted by the Agency for Science and Higher Education (AZVO), we successfully completed our process of re-accreditation and have been nominated the best professional study programme in Croatia.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="gridforpicandtext">
+                                <div class="gridforpiclist">
+                                    <div>
+                                        <h1>New Zagreb Campus</h1>
+                                        <p>The new campus covers almost 12.500 square meters and has 35 lecture rooms named after many Croatian and world innovators and scientists such as Nikola Tesla, Steve Jobs, Ivan Lupis, Faust Vrančić, Ruđer Bošković, Slavoljub Penkala, Ivan Vučetić, and the recently deceased emeritus professor Slavko Krajcar, the first rector of Algebra University.</p>
+                                    </div>
+                                    <div class="centermypictureclass">
+                                        <img src="../media/img/Algebra_kampus.jpg" width="80%">
+                                    </div>
+                                </div>
+                                <div class="gridforpiclist">
+                                    <div class="centermypictureclass">
+                                        <img src="../media/img/preddiplomski_VUA.jpg" width="60%">
+                                    </div>
+                                    <div>
+                                        <h1>Croatia</h1>
+                                        <p>Enjoy your time in Croatia and meet new people, develop new skills and gain valuable new professional knowledge to start your digital carrer!</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <div class="flexboxdivforpictures">
+                                <div id="textnexttopicture">
+                                    <h1>New Campus</h1>
+                                    <p>The new campus covers almost 12.500 square meters and has 35 lecture rooms named after many Croatian and world innovators and scientists such as Nikola Tesla, Steve Jobs, Ivan Lupis, Faust Vrančić, Ruđer Bošković, Slavoljub Penkala, Ivan Vučetić, and the recently deceased emeritus professor Slavko Krajcar, the first rector of Algebra University.</p>
+                                </div>
+                                <div id="pic1">
+                                    <img src="../media/img/Algebra_kampus.jpg" width="40%" height="100%">
+                                </div>
+                            </div>
+                            <div class="flexboxdivforpictures">
+                                <div id="pic2">
+                                    <img src="../media/img/preddiplomski_VUA.jpg" width="60%" height="100%">
+                                </div>
+                                <div id="textnexttopicture">
+                                    <h1>Croatia</h1>
+                                    <p>Enjoy your time in Croatia and meet new people, develop new skills and gain valuable new professional knowledge to start your digital carrer!</p>
+                                </div>
+                            </div> -->
+
+                            <div style="text-align: center;width:100%;display:block;" id="aboutus">
+                                <div>
+                                    <img src="../media/img/logo-algebra-rounded.svg" >
+                                </div>
+                            </div>
+                            <div id="altbackgroundandtext">
+                                <h1>About us</h1>
+                                <p>More than twenty years ago, we realized we have to do something about this. We knew we can and must offer something more than that. That is why Algebra opened its doors. Because of you.</p>
+
+                                    <p>You are the reason we work hard every day to improve and perfect our offer. You are the reason we never compromise on quality. We want you to discover the best version of yourself during your time on Algebra University. To find a field of work you will be passionate about and become really good at it.</p>
+                                    
+                                    <p>Of course we take pride in all the awards and accolades received during the years. We are glad when others recognize our efforts. But our number one concern is deserving the trust you put in us.</p>
+                                    
+                                    <p>We chose our lecturers very carefully. They will be your guides on the journey toward graduation. Their mission is to give you useful, recent and applicable knowledge of their respective areas. To make you a true expert with shining career prospects. Each lecture is envisioned as a small but significant step toward that goal. Their passion will rub onto you if you let it.</p>
+                            </div>
+
+                            <div id="embededvideodiv">
+                                <h1>Algebra University Collage</h1>
+                                <div>
+                                    <iframe id="aboutalgebravideo" src="https://www.youtube-nocookie.com/embed/m7l89jLP-0s?si=19C6lxsSpWWFyXm9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            
+                            <div id="partnersdiv">
+                                <div id="partnerstitle">
+                                    <h1>Our partners</h1>
+                                </div>
+                                <div class="flexboxdivforlogos">
+                                    <div class="logolist">
+                                        <h2>Goldsmiths Dual Degree Program</h2>
+                                        <img src="../media/img/Algebra_logo1.png" width="85%">
+                                        <p>Through this partnership, Algebra University offers to the next generation of its students a possibility to study in English on bachelor and graduate study programmes in the fields of computing, design and management, validated by Goldsmiths, University of London.</p>
+                                    </div>
+                                    <div class="logolist">
+                                        <h2>Fortinet Network Security Academy (FNSA)</h2>
+                                        <img src="../media/img/Algebra_logo2.png" width="50%">
+                                        <p>FNSA was created to address the international shortage of cybersecurity experts and to build a workforce skilled in all aspects of network security platform who will be recognized in the industry among an elite group of security professionals.</p>
+                                    </div>
+                                    <div class="logolist">
+                                        <h2>Red Hat Academy</h2>
+                                        <img src="../media/img/Algebra_logo3.jpg" width="50%">
+                                        <p>Red Hat® Academy turns academic institutions into centers for enterprise-ready talent by outfitting them with Red Hat Training. This comes in the form of hands-on instruction, curriculum, labs, performance-based testing, and instructor support.</p>
+                                    </div>
+                                    <div class="logolist">
+                                        <h2>CISCO Networking Academy</h2>
+                                        <img src="../media/img/Algebra_logo4.jpg" width="50%">
+                                        <p>Cisco Networking Academy is an innovative global initiative that provides students with knowledge and skills in the field of information and communication technologies and was launched and supported by Cisco Systems.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+
+                            <div id="visitus">
+                                <div id="addressinfo">
+                                    <h1>Visit us in Zagreb</h1>
+                                    <div>
+                                        <div>
+                                            <img src="../media/img/Algebra_kampus.jpg" >
+                                        </div>
+                                    </div>
+                                    <p></p>
+                                    <ul>
+                                        <li><b>Address:</b> Algebra University, Gradišćanska 24, 10000 Zagreb, Croatia</li>
+                                        <li><b>Working Hours:</b>
+                                            <ul>
+                                                <li>Monday 2 pm - 6 pm</li>
+                                                <li>Tuesday 2 pm - 6 pm</li>
+                                                <li>Wednesday 8 am - 12 pm</li>
+                                                <li>Thursday 8 am - 12 pm</li>
+                                                <li>Friday 8 am - 12 pm</li>
+                                            </ul>
+                                        </li>
+                                        <li><b>Student Office:</b>
+                                            <ul>
+                                                <li>Phone: +385 (0)1 2222 182</li>
+                                                <li>Algebra call center +385 (0)1 2332 861</li>
+                                                <li>Fax: +385 (0)1 2222 183</li>
+                                                <li>E-mail: <a href="mailto:student@algebra.hr">student@algebra.hr</a></li>
+                                            </ul>
+                                        </li>
+                                      </ul>
+                                </div>
+
+                                <div id="algebramap">
+                                    <h1>Location</h1>
+                                    <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=15.938911736011507%2C45.80970626003066%2C15.942452251911165%2C45.81132158547463&amp;layer=mapnik" style="border: 1px solid black"></iframe>
+                                    <br/>
+                                    <small>
+                                        <a href="https://www.openstreetmap.org/#map=19/45.81051/15.94068">View Larger Map</a>
+                                    </small>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+
+
+
+                    <!-- End of MAINCONTENTBOX -->
+                    </div>
+                    
+
+
+
+                    
+                    <!-- MODAL DIVS -->
+                    <div>
+                        <div class="contact" style="display: none;">
+                            <h1 id="title3">Contact us</h1>
+                            <p style="color: green;" id="successp3"></p>
+                            <p style="color: red;" id="failurep3"></p>
+                            <form id="contactform" action="https://www.fulek.com/mvc/supit/project-contact-form"> <!-- probably intended this way, simpler-->
+                                <label for="Fullname">Full Name:</label><br>
+                                <input type="text" id="Fullname" name="Fullname" value="test" placeholder="Full Name"><br>
+                                <label for="Email">Email:</label><br>
+                                <input type="email" id="Email" name="Email" value="test@test" placeholder="email@domain.com"><br><br>
+                                <label for="Importance">Importance:</label><br>
+                                <input type="text" id="Importance" name="Importance" value="Visoko" placeholder="Low"><br><br>
+
+                                <label for="Message">Message:</label><br>
+                                <input type="text" id="Message" name="Message" value="tes ttesttest" placeholder="Message"><br><br>
+                                <p style="color: green;" id="redirectp3"></p>
+                                <label for="RecieveNewsletter" style="margin-left: 20px;margin-bottom: 2em;">Recieve Newsletter:<input type="checkbox" id="ReceiveNewsletter" name="ReceiveNewsletter" value="true"></label><br>
+                                <!-- <input type="text" id="RecieveNewsletter" name="RecieveNewsletter" value="true" placeholder="Yes"><br><br> -->
+                                
+                                <input type="submit" id="contactbutton" style="width: 100px;height: 50px;margin-top: 1em;" value="Submit"></input>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="logout" style="display: none;">
+                            <h1 id="title4">Are you sure?</h1>
+                            <p style="color: green;" id="successp3"></p>
+                            <p style="color: red;" id="failurep3"></p>
+                            <button type="button" onclick="logout(true)" id="logoutbutton" style="width: 100px;height: 50px;">Yes</button>
+                            <button type="button" onclick="logout(false)" id="logoutbutton" style="width: 100px;height: 50px;">No</button>
+                        </div>
+
+                    </div>
+
+                <!-- end of TEXT -->
+                </div>
+            
+                <div class="footer">
+                    <p>Standards in internet technology application</p>
+                    <p>Project 2024</p>
+                    <p>&copy;Derin Taranci</p>
+                </div>
+                </div>
+            </div>
+
+        <!-- </div> -->
+
+
+
+    </body>
+</html>

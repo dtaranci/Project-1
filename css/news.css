@@ -1,0 +1,64 @@
+#datepickercontainer {
+    margin: 0 auto;
+}
+
+.text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-between;
+    margin: 2em 2em;
+}
+#date3 div img,
+#date2 div img,
+#date1 div img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 1em;
+}
+
+.footer {
+    margin-top: 2em !important;
+}
+
+@media screen and (width <= 760px) {
+    .text {
+        margin: 0;
+        width: 100vw;
+    }
+    .grid-container {
+        overflow: visible;
+    }
+    .side_left,
+    .side_right {
+        display: none;
+    }
+    #altbackgroundandtext {
+        width: initial;
+        margin: 0;
+        padding: 0;
+    }
+    #altbackgroundandtext p {
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-bottom: 2em;
+    }
+    #altbackgroundandtext h1 {
+        padding: 1em;
+    }
+    
+    #altbackgroundandtext img{
+        width: 95%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #datepickercontainer div div {
+        margin: 0 auto;
+    }
+
+    #datepickercontainer {
+        margin-top: 2em;
+    }
+}

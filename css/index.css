@@ -1,0 +1,664 @@
+#videotext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    border-radius: 5px;
+    text-shadow: 2px 2px 14px rgba(0,0,0,1);
+}
+
+
+.title h1 {
+    margin-bottom: 0px;padding-bottom: 0;text-transform: uppercase;
+}
+.title h2 {
+    text-align: center;word-spacing: 10px;margin-top: 0;padding-top: 0; font-variant: small-caps;
+}
+#algebracitiestablediv {
+    display:none;
+}
+
+#CitiesTable {
+    padding: 0;margin-left: 17%;text-align: center;font-variant: small-caps;font-weight: bold;display: block;margin-top: 0;padding-top: 0;text-shadow: none;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#picturecontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+#mainpicture {
+    max-width: 70%;
+}
+
+
+#maincontentbox button {
+    size: 50px;
+}
+
+img[id^="gallery"] {
+    width: 50px;
+}
+
+
+
+/* VIDEO LOGIC HERE */
+/* .videonoblur {                
+    object-fit: fill;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    filter: brightness(80%);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.videoblur {                
+    object-fit: fill;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    filter: brightness(20%);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+} */
+
+.videonoblur {                
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    filter: brightness(80%);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.videoblur {                
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    filter: brightness(20%);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+#myVideo {
+    width: 100%;
+}
+
+
+#maincontentbox {
+    text-align: center;
+}
+.gallery {
+    position: static;
+    margin-top: 30em;
+}
+
+.text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-between;
+    margin: 2em 2em;
+}
+
+.flexboxdivclass {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    column-gap: 200px;
+    flex: 1;
+    /* column-gap: 100%; */
+    
+}
+
+.flexboxdivbox {
+    display:flex;
+    margin:0 0 0 0;
+    padding:0;
+    flex-direction: column;
+    align-items: stretch;
+    flex: 1;
+    text-align: left;
+    background-color: #BF1965;
+    box-shadow: 5px 10px #888888;
+    width: 17em;
+}
+
+.flexboxdivbox h1 {
+   margin: 0;
+   padding: 0;
+}
+
+.flexboxdivbox h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+#textcolumns p::first-letter {
+    font-size: 2em;
+}
+
+#textcolumns p {
+    margin-left: 1em;
+    padding: 0.625em;
+    font-size: 1.1em;
+}
+#textcolumns {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Times New Roman', Times, serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    /* box-shadow: 50px 5px 5px black; */
+}
+
+#altbackgroundandtext {
+    /* background-image: linear-gradient(rgb(202, 202, 202),rgb(223, 223, 223)); */
+    background-image: linear-gradient(to right, #DF631A, #BF1065);
+    /* background-color: black; */
+    color: white;
+    /* margin: 2em 0em 2em 0em; */
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-radius: 1em;
+    padding: 2em;
+    width: 100%;
+    text-align: justify;
+    font-weight: 500;
+    box-shadow: 5px 10px #888888;
+    /* text-shadow: 0px 0px 5px black; */
+    /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
+    background-size: 200%;
+    background-position: 20%;
+    transition: background-position 0.3s ease-in-out;
+}
+
+#altbackgroundandtext:hover {
+    background-position: 100%;
+}
+
+#altbackgroundandtext h1 {
+    text-align: center;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+#altcontent {
+    background-image: linear-gradient(to right, #DF631A, #BF1065);
+    color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+.somepictureshere {
+    text-align: center;
+}
+
+#somepicturehereleft {
+    text-align: left;
+}
+
+#somepicturehereright {
+    text-align: right;
+}
+
+.somepictureshere img {
+    border-radius: 50%; 
+    margin: 0 auto;
+    /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;  */
+    /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
+}
+
+#pic1 img,#pic2 img{
+    border-radius: 50%; 
+    margin: 0 auto;
+}
+
+#pic1, #pic2 {
+    text-align: center;
+}
+
+.flexboxdivforpictures {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+    column-gap: auto;
+    flex: 1;
+    margin-top: 4em;
+    /* column-gap: 100%; */
+}
+
+#textnexttopicture {
+    text-align: justify;
+    width: 34em;
+}
+
+#textnexttopicture h1 {
+    text-align: center;
+}
+
+
+.gridforpicandtext {
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 10em;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: auto;
+    padding: 10px;
+    margin: 4em 0 6em 0;
+}
+
+.gridforpiclist {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    align-items: center;
+    box-shadow: 5px 10px #888888;
+    border: 2px solid black;
+    padding: 1em 2em 1em 2em;
+    height: fit-content;
+}
+
+.gridforpiclist p {
+    text-align: justify;
+    font-weight: 600;
+}
+
+.gridforpiclist h1 {
+    text-transform: uppercase;
+}
+
+.gridforpiclist img {
+    border-radius: 50%;
+}
+
+.centermypictureclass {
+    text-align: center;
+}
+.flexboxdivforlogos {
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    align-content: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    column-gap: 2em;
+    flex: 1;
+    margin-top: 4em; */
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 10em;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: auto;
+    padding: 10px;
+}
+
+.logolist {
+    text-align: center;
+    height: fit-content;
+    box-shadow: 5px 10px #888888;
+    border: 2px solid black;
+    padding: 0 2em 1em 2em;
+}
+
+.logolist p {
+    text-align: justify;
+}
+
+#partnerstitle h1 {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+
+.footer {
+    margin-top: 8rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+#mobilearrow {
+    display: none;
+}
+
+.threedash {
+    display: none;
+}
+
+
+div[id^="picture"] a img {
+    width: 7em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+div[class^="gallery"] div a img {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#algebramap {
+    text-align: center;
+}
+#addressinfo {
+    margin-left: 4em;
+    padding: 2em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 13px;
+}
+
+#embededvideodiv {
+    text-align: center;
+    width: 100%;
+    padding: 2em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 13px;
+    height: fit-content;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#aboutalgebravideo {
+    width: 74%;
+    height: 30em;
+}
+
+#algebramap iframe {
+    width: 50%;
+    height: 30em;
+}
+
+#addressinfo div div img{
+    width: 50%;
+    /* border-radius: 50%;    not needed, too much*/
+ }
+
+ #visitus {
+    width:100%;
+    margin-top: 8em;
+ }
+
+ #visitus div div {
+    text-align: center;width:100%;display:block;
+ }
+
+ #visitus div h1 {
+    text-align: center;
+ }
+
+ #visitus div ul li{
+    padding-top: 0.4em;
+ }
+ #visitus div ul li ul li{
+    padding-top: 0.2em;
+ }
+
+ @media screen and (width >= 2404px) {
+    .gallery {
+        margin-top: 50em;
+    }
+ }
+
+ @media screen and (width >= 3024px) {
+    .gallery {
+        margin-top: 75em;
+    }
+ }
+
+@media screen and (width <= 760px) { /* change in chrome devtools then copypaste */
+
+
+    .side_left,
+    .side_right {
+        display: none;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        align-content: space-between;
+        margin: 0 auto; /* AUTO */
+        width: 100vw;
+    }
+
+    .flexboxdivclass {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        /* column-gap: 200px; */
+        flex: 1;
+        gap: 5em;
+    }
+
+    .flexboxdivbox {
+        width: 70vw;
+        flex-basis: 25em;
+    }
+    .gridforpicandtext {
+        width: 80vw;
+        height:auto;
+        grid-gap: 35em;
+        margin-bottom: 15em;
+    }
+
+    .gridforpiclist {
+        grid-auto-flow: row;
+        text-align: left;
+        
+    }
+
+    .gridforpiclist h1 {
+        text-align: center;
+    }
+    #altbackgroundandtext {
+        width: initial;
+    }
+    .flexboxdivforlogos {
+        display: grid;
+        grid-auto-flow: row;
+        grid-row-gap: 4em;
+        grid-template-rows: auto; /* AUTO easy fix*/
+        grid-template-columns: auto;
+        grid-column-gap: 0;
+        padding: 10px;
+    }
+
+    .logolist img {
+        width: 75%;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        overflow: hidden;
+     }
+
+     #myVideo {
+        /* display: none; */
+        width: unset;
+        width: 100%;
+        /* height: 150%; */
+        height: 100%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+     }
+
+     /* #video { */
+        /* margin-left: -64em; */
+        /* margin-left: -51em; */
+        
+     /* } */
+
+     .videonoblur {                
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        filter: brightness(50%);
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+    }
+    
+    .videoblur {                
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        filter: brightness(20%);
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+    }
+    
+
+
+
+     #nav {
+        flex-direction: column;
+        justify-content: space-evenly;
+        border-bottom: 5px solid red;
+        background-color: black;
+        color: white;
+        /* padding: 5px 5px 5px 5px; */
+        padding: 0;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        align-items: flex-start;
+        height: auto;
+        /* width:100vw; 100% viewport width so it fits exactly in the area avaiable to be shown at once */ /* this caused horizontal scrolling*/
+        width: inherit;
+        gap: 1em;
+        transition: height 1s ease-in-out;
+        z-index: 2;
+     }
+
+
+     .navicon,
+     .navbutton,
+     #curriculum {
+        display: none; /* !important because JS/jQuery #curriculum login check logic and this overrides it */ /* fixed it another way*/
+        justify-self: center;
+     }
+     .navbutton {
+        padding: inherit;
+        z-index: 2;
+        justify-self: center;
+        align-self: center;
+        width: 100vw;
+        height: 2em;
+     }
+
+     .navbutton a {
+        vertical-align: middle;
+        align-self: center;
+        text-align: center;
+        width: inherit;
+        height: inherit;
+        font-size: 1.3em;
+
+     }
+
+     .threedash {
+        display: block;
+        text-align: center;
+        margin-left: 1em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        width: 3.2em;
+        background-image: linear-gradient(to right, #DF631A, #BF1065);
+        border-radius: 13px;
+
+     }
+
+     .threedash a {
+        text-align: center;
+     }
+     .ui-icon-caret-1-s,
+     .ui-icon-caret-1-n {
+        transform: scale(4); /* I used it for the sake of using jQuery UI, it looks blury due to bitmap image*/
+     }
+
+     .gallery {
+        /* margin-top: 62em; */
+        margin-top: 45em;
+     }
+
+
+     #mobilearrow {
+        display: block;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        color: white;
+        /* text-shadow: 2px 2px 14px rgba(0,0,0,1); */
+        opacity: 0.5;
+        font-weight: normal;
+        font-size: 8em;
+     }
+
+
+     #picturecontainer {
+        display: none;
+     }
+
+     #mainpicture {
+        max-width: 100%;
+     }
+
+     #addressinfo {
+        margin-left: 0;
+        text-align: left;
+        padding: 1em;
+     }
+     #addressinfo div div img{
+        width: 75%;
+     }
+
+     #algebramap iframe {
+        width: 90%;
+        height: 30em;
+    }
+
+    #embededvideodiv {
+        width: 90%;
+        padding: 1em;
+    }
+    
+    #aboutalgebravideo {
+        width: 100%;
+        height: 30em;
+    }
+}

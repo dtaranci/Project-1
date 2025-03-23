@@ -1,0 +1,147 @@
+.mynav {
+    flex-wrap: nowrap;
+    -webkit-box-sizing:initial;
+    box-sizing: content-box !important;
+}
+
+/* #mynav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 5px solid red;
+    background-color: black;
+    color: white;
+    height: 50px;
+    padding: 5px 5px 5px 5px;
+}
+
+.navbutton {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.navbutton a {
+    color: white;
+    font-style: normal;
+    font-size: 15px;
+    background-color: rgba(255,255,255,0.4);
+    padding: 15px;
+    text-decoration: none;
+} */
+
+#navicon {
+    width: 60%;
+}
+
+.register {
+    display: none;
+}
+
+
+#logindiv,
+.register,
+.contact {
+    margin: 0 auto;
+    margin-top: 2em;
+    padding-top: 2em;
+    text-align: center;
+    background-color: white;
+    height: 30em;
+    width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-image: linear-gradient(to right, #DF631A, #BF1065) 30;
+    /* border-radius: 13px;  sadly, does not work with border-image */
+    border-left: 5px solid;
+    border-right: 5px solid;
+    border-bottom: 5px solid;
+    border-top: 5px solid;
+}
+
+#logindiv form label,
+.register form label,
+.contact form label {
+    font-weight: bold;
+}
+#password,
+#username,
+#password2,
+#username2 {
+    border-image: linear-gradient(to right, #DF631A, #BF1065) 10;
+    border-left: 3px solid;
+    border-right: 3px solid;
+    border-bottom: 3px solid;
+    border-top: 3px solid;
+    border-radius: 0;
+}
+
+#failurep,
+#successp,
+#redirectp,
+#successp2,
+#failurep2,
+#redirectp2 {
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 13px;
+    padding: 0.5em;
+    /* position: absolute; */
+    bottom: 0;
+}
+
+.register,
+.contact {
+    box-shadow: none;
+}
+
+
+
+
+
+/* jQuery UI modal override */
+
+.ui-dialog .ui-dialog-titlebar { /* modal colors */
+    background-image: linear-gradient(to right, #DF631A, #BF1065);
+    color: white;
+    /* border-radius: 13px; */
+}
+
+.ui-widget-overlay { /* modal background darkening */
+    background: black;
+}
+
+.ui-widget.ui-widget-content { /* main modal box*/
+    border-radius: 13px;
+    border-image: linear-gradient(to right, #DF631A, #BF1065) 10;
+    border-left: 5px solid;
+    border-right: 5px solid;
+    border-bottom: 5px solid;
+    border-top: 5px solid;
+    border-radius: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.ui-dialog .ui-dialog-titlebar-close { /* X button a bit too much to the right for border-radius */
+    right: 0.7em;
+}
+
+.footer {
+    margin-top: 2em !important;
+}
+
+@media screen and (width <= 760px) {
+    #logindiv {
+        width: 85%;
+    }
+
+    #password, #username, #password2, #username2 {
+        font-size: 1.3em;
+        width: 85%;
+    }
+    .footer {
+        margin-top: 4em !important;
+    }
+}

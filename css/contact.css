@@ -1,0 +1,90 @@
+
+
+/* CONTACT STYLE + MODAL STYLE + LOGOUT form + everything(so I dont have to include many .css files since this is included on each page anyway)*/
+
+.contact form label {
+    font-weight: bold;
+}
+
+.notloggedin,
+.logout,
+.contact {
+    margin: 0 auto;
+    margin-top: 2em;
+    padding-top: 2em;
+    text-align: center;
+    background-color: white;
+    height: 30em;
+    width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-image: linear-gradient(to right, #DF631A, #BF1065) 30;
+    /* border-radius: 13px;  sadly, does not work with border-image */
+    border-left: 5px solid;
+    border-right: 5px solid;
+    border-bottom: 5px solid;
+    border-top: 5px solid;
+}
+
+
+#successp4,
+#failurep4,
+#redirectp4 {
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 13px;
+    padding: 0.5em;
+    /* position: absolute; */
+    bottom: 0;
+}
+
+
+
+
+/* jQuery UI modal override */
+.ui-dialog .ui-dialog-titlebar { /* modal colors */
+    background-image: linear-gradient(to right, #DF631A, #BF1065);
+    color: white;
+    /* border-radius: 13px; */
+}
+
+.ui-widget-overlay { /* modal background darkening */
+    background: black;
+}
+
+.ui-widget.ui-widget-content { /* main modal box*/
+    border-radius: 13px;
+    border-image: linear-gradient(to right, #DF631A, #BF1065) 10;
+    border-left: 5px solid;
+    border-right: 5px solid;
+    border-bottom: 5px solid;
+    border-top: 5px solid;
+    border-radius: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.ui-dialog .ui-dialog-titlebar-close { /* X button a bit too much to the right for border-radius */
+    right: 0.7em;
+}
+
+.footer {
+    margin-top: 8em;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (width <= 760px) {
+    .ui-dialog, 
+    .ui-corner-all,
+    .ui-widget,
+    .ui-widget-content,
+    .ui-front,
+    .ui-widget {
+        max-width: 97% !important;
+    }
+    .ui-dialog {
+        padding: 0;
+    }
+}
